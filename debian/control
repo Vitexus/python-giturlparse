@@ -1,0 +1,26 @@
+Source: python-giturlparse
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/nephila/giturlparse
+Vcs-Git: https://github.com/Vitexus/python-giturlparse.git
+Vcs-Browser: https://github.com/Vitexus/python-giturlparse
+Rules-Requires-Root: no
+
+Package: python3-giturlparse
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: Git URL parsing and rewriting module
+ giturlparse parses and rewrites Git remote URLs (SSH, HTTPS, and others)
+ into structured components.
+ .
+ This package provides the Python 3 module for giturlparse.
